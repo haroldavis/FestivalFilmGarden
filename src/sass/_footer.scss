@@ -1,0 +1,26 @@
+@import "./variables";
+.footer{
+    margin-top: 20px;
+    .footer_credits{
+        background-color: $color-background-footer-credits;
+        padding: 15px 0; 
+        .row{
+            @media screen and (max-width: 768px){
+                display: flex;
+                flex-direction: column;
+            }
+        }        
+        p{
+            color: $color-p-footer;
+            font-size: $size-footer-p;
+            @media screen and (max-width: 768px){
+                display: flex;
+                justify-content: center;
+            }
+        }      
+        .fab{
+            color: $color-p-footer;
+            font-size: 1.2rem;
+        }
+    }  
+}
