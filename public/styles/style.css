@@ -62,8 +62,12 @@ body {
 }
 
 .news {
-  height: 700px;
-  padding: 35px;
+  height: 480px;
+  padding: 35px 0;
+}
+.news img {
+  object-fit: cover;
+  height: 100%;
 }
 
 /* sizes */
@@ -80,6 +84,10 @@ body {
   padding: 30px 0;
   border-top: 5px solid red;
   border-bottom: 5px solid red;
+}
+
+.calendar_day {
+  font-size: 5rem;
 }
 
 /* sizes */
@@ -106,12 +114,12 @@ body {
 .about .about_two {
   height: 50%;
   width: 100%;
+  padding: 0 0 20px 0;
   background: linear-gradient(to bottom, #edf3ed 320px, transparent);
 }
-.about .about_two--img {
-  height: 100%;
-  width: 100%;
-  opacity: 0.7;
+.about .img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 /* sizes */
@@ -126,6 +134,23 @@ body {
 
 .main {
   height: 720px;
+  display: block;
+  position: relative;
+  background: url("../../public/images/filmimage.jpg") no-repeat fixed top;
+  background-size: cover;
+}
+.main .main_text {
+  color: #FCFBFB;
+}
+
+.form {
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(#f3f3f3, transparent, #f3f3f3);
+}
+.form .form-title {
+  color: #FCFBFB;
+  text-align: center;
 }
 
 /* sizes */

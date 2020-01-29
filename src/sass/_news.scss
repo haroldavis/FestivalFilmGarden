@@ -1,6 +1,10 @@
 @import "./variables";
 
 .news{
-    height: 700px;
+    height: 480px;
     padding: 35px 0;
+    img{
+        object-fit: cover;
+        height: 100%;
+    }    
 }

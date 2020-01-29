@@ -1,4 +1,20 @@
 @import "./variables";
-.main{
-    height: 720px;   
+.main {
+  height: 720px;
+  display: block;
+  position: relative;
+  background: url("../../public/images/filmimage.jpg") no-repeat fixed top;
+  background-size: cover;
+  .main_text {
+    color: $color-title-h1;
+  }
+}
+.form {
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(#f3f3f3,transparent, #f3f3f3,);
+  .form-title {
+    color: $color-title-h1;
+    text-align: center;
+  }
 }
