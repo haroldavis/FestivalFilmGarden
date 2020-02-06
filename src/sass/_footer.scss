@@ -1,6 +1,5 @@
 @import "./variables";
-.footer{
-    margin-top: 20px;
+.footer{    
     .footer_credits{
         background-color: $color-background-footer-credits;
         padding: 15px 0; 
@@ -21,6 +20,18 @@
         .fab{
             color: $color-p-footer;
             font-size: 1.2rem;
+        }
+        .list-social{
+            ul{
+                margin-top: 1rem;
+            }
+            li{
+                list-style-type: none;
+                padding: 0 8px;
+            }
+            @media screen and (max-width: 768px){
+                display: none;
+            }
         }
     }  
 }

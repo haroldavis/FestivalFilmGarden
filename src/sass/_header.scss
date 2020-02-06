@@ -3,19 +3,43 @@
     height: 60px;
     .navbar{
         height: 60px;
-        .navbar-left{
-            height: 100%;
+        box-shadow: 2px 2px 2px 1px $color-box-shadow;
+        .navbar-left{ 
+            @media screen and (max-width: 796px){
+                width: 100%;
+                justify-content: space-between;
+            }           
+            .navbar-brand{
+                font-family: $font-brand;
+                font-size: $size-brand;
+                padding-top: 0;
+                padding-bottom: 0;
+                color: $color-brand;
+            }            
+            .nav-item{
+                @media screen and (max-width: 796px){
+                    display: none;
+                }
+            }
+        }       
+        .nav-item.dropdown{
+            display: none;
+            @media screen and (max-width: 796px){
+                display: inherit;
+            }
         }
+        .nav-pills{
+            font-size: $size-navbar-a;
+        }
+
     }
     .list-social{
-        ul{
-            margin-top: 1rem;
-        }
+        font-size: $size-navbar-a;
         li{
             list-style-type: none;
             padding: 0 8px;
         }
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 998px){
             display: none;
         }
     }

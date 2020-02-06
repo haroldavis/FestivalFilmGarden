@@ -23,9 +23,6 @@ body {
   position: relative;
 }
 
-.footer {
-  margin-top: 20px;
-}
 .footer .footer_credits {
   background-color: #2B303A;
   padding: 15px 0;
@@ -50,6 +47,18 @@ body {
   color: #FCFBFB;
   font-size: 1.2rem;
 }
+.footer .footer_credits .list-social ul {
+  margin-top: 1rem;
+}
+.footer .footer_credits .list-social li {
+  list-style-type: none;
+  padding: 0 8px;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer_credits .list-social {
+    display: none;
+  }
+}
 
 /* sizes */
 /* fonts */
@@ -62,12 +71,36 @@ body {
 }
 
 .news {
-  height: 480px;
-  padding: 35px 0;
+  height: 635px;
+  margin-top: 50px;
 }
-.news img {
-  object-fit: cover;
-  height: 100%;
+.news .carousel-item img {
+  height: 480px;
+}
+.news .carousel-item h5 {
+  font-size: 2.2rem;
+}
+.news .carousel-item p {
+  font-size: 1.2rem;
+}
+.news .carousel-caption {
+  bottom: 180px;
+}
+.news .news_register {
+  text-align: center;
+  height: 152px;
+  background-image: linear-gradient(#f1fec6, transparent);
+}
+.news .news_register h2 {
+  font-size: 3rem;
+}
+.news .news_register a {
+  text-decoration: none;
+  color: #FCFBFB;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background: #333;
 }
 
 /* sizes */
@@ -81,13 +114,28 @@ body {
 }
 
 .calendar {
-  padding: 30px 0;
+  margin-top: 30px;
   border-top: 5px solid red;
   border-bottom: 5px solid red;
 }
+.calendar h2 {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 3rem;
+}
 
 .calendar_day {
-  font-size: 5rem;
+  font-size: 3rem;
+  color: #385F71;
+}
+@media screen and (max-width: 998px) {
+  .calendar_day {
+    display: none;
+  }
+}
+
+.films > .card {
+  max-width: 620px;
 }
 
 /* sizes */
@@ -105,11 +153,15 @@ body {
 }
 .about h2 {
   font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+.about p {
+  font-size: 1.2rem;
 }
 .about .about_one {
   height: 50%;
   width: 100%;
-  background: linear-gradient(to bottom, white 15px, #F8FDF3 280px, #edf3ed);
+  background: linear-gradient(to bottom, white 15px, #f8fdf3 280px, #edf3ed);
 }
 .about .about_two {
   height: 50%;
@@ -120,6 +172,12 @@ body {
 .about .img-fluid {
   max-width: 100%;
   height: auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 796px) {
+  .about .img-fluid {
+    display: none;
+  }
 }
 
 /* sizes */
@@ -139,17 +197,41 @@ body {
   background: url("../../public/images/filmimage.jpg") no-repeat fixed top;
   background-size: cover;
 }
+@media screen and (max-width: 998px) {
+  .main .container {
+    margin: auto;
+  }
+}
 .main .main_text {
-  color: #FCFBFB;
+  color: #f3f3f3;
+}
+@media screen and (max-width: 998px) {
+  .main .main_text {
+    text-align: center;
+  }
+}
+.main .main_text .main_text--title {
+  font-size: 3.5rem;
+}
+.main .main_text .main_text--subtitle {
+  font-size: 2.5rem;
+}
+.main .main_text .main_text--content {
+  font-size: 2rem;
+}
+.main .main_text .main_text--content .fas {
+  font-size: 2.2rem;
+  color: red;
 }
 
 .form {
   padding: 10px;
   border-radius: 10px;
-  background-image: linear-gradient(#f3f3f3, transparent, #f3f3f3);
+  background-image: linear-gradient(#f3f3f3, transparent, #f1fec6);
 }
 .form .form-title {
-  color: #FCFBFB;
+  font-size: 3rem;
+  color: #434E4B;
   text-align: center;
 }
 
@@ -168,18 +250,45 @@ body {
 }
 .header .navbar {
   height: 60px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.header .navbar .navbar-left {
-  height: 100%;
+@media screen and (max-width: 796px) {
+  .header .navbar .navbar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
-.header .list-social ul {
-  margin-top: 1rem;
+.header .navbar .navbar-left .navbar-brand {
+  font-family: "Public Sans", sans-serif;
+  font-size: 2.2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #385F71;
+}
+@media screen and (max-width: 796px) {
+  .header .navbar .navbar-left .nav-item {
+    display: none;
+  }
+}
+.header .navbar .nav-item.dropdown {
+  display: none;
+}
+@media screen and (max-width: 796px) {
+  .header .navbar .nav-item.dropdown {
+    display: inherit;
+  }
+}
+.header .navbar .nav-pills {
+  font-size: 1.2rem;
+}
+.header .list-social {
+  font-size: 1.2rem;
 }
 .header .list-social li {
   list-style-type: none;
   padding: 0 8px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .header .list-social {
     display: none;
   }

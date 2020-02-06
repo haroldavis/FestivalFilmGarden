@@ -1,20 +1,42 @@
 @import "./variables";
 .main {
+  .container {
+    @media screen and (max-width: 998px) {
+      margin: auto;
+    }
+  }
   height: 720px;
   display: block;
   position: relative;
   background: url("../../public/images/filmimage.jpg") no-repeat fixed top;
   background-size: cover;
   .main_text {
-    color: $color-title-h1;
+    color: #f3f3f3;
+    @media screen and (max-width: 998px) {
+      text-align: center;
+    }
+    .main_text--title {
+      font-size: $size-title-h1;
+    }
+    .main_text--subtitle {
+      font-size: $size-subtitle;
+    }
+    .main_text--content {
+      font-size: $size-textcontent;
+      .fas {
+        font-size: 2.2rem;
+        color: red;
+      }
+    }
   }
 }
 .form {
-    padding: 10px;
-    border-radius: 10px;
-    background-image: linear-gradient(#f3f3f3,transparent, #f3f3f3,);
+  padding: 10px;
+  border-radius: 10px;
+  background-image: linear-gradient(#f3f3f3, transparent, #f1fec6);
   .form-title {
-    color: $color-title-h1;
+    font-size: $size-title-h2;
+    color: $color-title-form;
     text-align: center;
   }
 }

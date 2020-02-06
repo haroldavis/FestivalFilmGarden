@@ -12,10 +12,11 @@
 </head>
 
 <body data-spy="scroll" data-target="#menu" data-offset="0">
+    <!-- Header -->
     <header class="header">
         <nav id="menu" class="navbar fixed-top navbar-light bg-light">
             <div class="navbar-left d-flex">
-                <a class="navbar-brand" href="#">Festival Film Garden</a>
+                <a class="navbar-brand d-flex align-items-center" href="#">Watch it Outside</a>
                 <ul class="nav nav-pills">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
@@ -35,7 +36,7 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Home</a>
                             <a class="dropdown-item" href="#About">About</a>
-                            <a class="dropdown-item" href="#Calendar">Calendare</a>
+                            <a class="dropdown-item" href="#Calendar">Calendar</a>
                             <a class="dropdown-item" href="#News">News</a>
                         </div>
                     </li>
@@ -43,28 +44,31 @@
             </div>
             <div class="list-social">
                 <ul class="d-flex align-items-center">
-                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="main container-fluid d-flex align-items-center">
+    <!-- Main -->
+    <main id="Main" class="main container-fluid d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="main_text col-md-10">
-                        <h1>Watch It Outside Boston Edition</h1>
-                        <p>Film Festival</p>
+                        <h1 class="main_text--title">Watch It Outside Boston Edition</h1>
+                        <p class="main_text--subtitle">Film Festival</p>
+                        <p class="main_text--content mt-4">6 to 8th of August </p>
+                        <p class="main_text--content">Boston Public Garden <i class="fas fa-map-marker"></i></p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
                     <!-- form -->
                     <div class="col">
                         <div id="Register"></div>
                         <form class="form">
-                            <h3 class="form-title mb-5">Reserve the tickets</h3>
+                            <h2 class="form-title mb-5">Reserve the tickets</h2>
                             <div class="form-group">
                                 <div class="row pb-3">
                                     <div class="col-md-6">
@@ -114,14 +118,13 @@
                 </div>
             </div>
     </main>
+    <!-- Sections -->
     <section id="About" class="container-fluid about">
         <div class="row about_one">
             <div class="col-lg-6 p-2 d-flex align-items-center">
                 <div class="col-md-10">
-                    <h2>About team</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi laudantium ullam
-                        accusamus at dolorum, neque tempora mollitia illum, natus reiciendis velit inventore dolores
-                        molestiae rem, soluta necessitatibus praesentium porro!</p>
+                    <h2 class="mb-4">About Festival Film</h2>
+                    <p>The film festival is the best film event of each year, where various films are presented for the enjoyment of all our visitors. Films will be presented for the general public</p>
                 </div>
             </div>
         </div>
@@ -132,117 +135,117 @@
             <div class="col-md-6 d-flex align-items-center">
                 <div class="offset-md-2">
                     <div class="about_two--up">
-                        <h2>Boston Public Garden</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ducimus, eius tempore harum
-                            vel
-                            obcaecati ipsa, cumque neque dolore labore eveniet, quam quisquam quos ex? Reiciendis
-                            facere
-                            voluptates alias facilis!</p>
-                        <p>If you want to know more about Public Garden of Boston, click <a
+                        <h2 class="mb-4">Boston Public Garden</h2>
+                        <p >The Public Garden, also known as Boston Public Garden, is a large park in the heart of Boston, Massachusetts, adjacent to Boston Common.</p c>
+                        <p>If you want to know more about Public Garden of Boston, click <a target="_blank"
                                 href="https://www.boston.gov/parks/public-garden">here</a>.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="Calendar" class="calendar container">
-        <h2>Festival Film</h2>
-        <div class="films">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">UP</h5>
-                                    <p class="card-text">Carl Fredricksen is a 78-year-old balloon seller willing to
-                                        fulfill his dream. However, he discovers a young and unexpected stowaway too late. What in
-                                        principle will be suspicious, will end up becoming sympathy towards the boy
-                                        while together they spend fascinating adventures in exotic places.</p>
+        </div>        
+    </section>      
+    <section id="Calendar" class="calendar">  
+        <div class="container">
+            <h2>Festival Film</h2>           
+            <div class="films">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">UP</h5>
+                                        <p class="card-text">Carl Fredricksen is a 78-year-old balloon seller willing to
+                                            fulfill his dream. However, he discovers a young and unexpected stowaway too
+                                            late. What in
+                                            principle will be suspicious, will end up becoming sympathy towards the boy
+                                            while together they spend fascinating adventures in exotic places.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="./public/images/up.jpg" class="card-img" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <p class="calendar_day">5th August</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6  d-flex justify-content-center align-items-center">
-                    <p class="calendar_day">6th August</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./public/images/mrbean.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mr. Bean's Holiday</h5>
-                                    <p class="card-text">When London's wet weather becomes unbearable, Mr. Bean heads to
-                                        the Cote d'Azur to have fun in the sun. As always, his planes did not have as
-                                        expected, and they end up confusing him with a hijacker and a renowned
-                                        filmmaker..</p>
+                                <div class="col-md-4">
+                                    <img src="./public/images/up.jpg" class="card-img" alt="...">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Star Wars: Episode IV</h5>
-                                    <p class="card-text">The ship in which Princess Leia travels is captured by the
-                                        imperial troops commanded by the fearsome Darth Vader. After landing on the planet Tattooine they are captured
-                                        and sold to the young Luke Skywalker, who discovers the hidden message that is
-                                        destined for Obi Wan Kenobi, the Jedi master whom Luke must find to save the
-                                        princess.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="./public/images/startwars.jpg" class="card-img" alt="...">
-                            </div>
-                        </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <p class="calendar_day">5th August</p>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <p class="calendar_day">7th August</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <p class="calendar_day">8th August</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src="./public/images/vanhelsing.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Van Helsing</h5>
-                                    <p class="card-text">TA monster and strength hunter with a beautiful woman to face
-                                        Dracula and other creatures in Transylvania.</p>                                
+                <div class="row">
+                    <div class="col-lg-6  d-flex justify-content-center align-items-center">
+                        <p class="calendar_day">6th August</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="./public/images/mrbean.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mr. Bean's Holiday</h5>
+                                        <p class="card-text">When London's wet weather becomes unbearable, Mr. Bean heads to
+                                            the Cote d'Azur to have fun in the sun. As always, his planes did not have as
+                                            expected, and they end up confusing him with a hijacker and a renowned
+                                            filmmaker..</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    </section>
-    <div id="News"></div>
-    <section class="news">
-        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card mb-3">
+                            <div class="row no-gutters">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Star Wars: Episode IV</h5>
+                                        <p class="card-text">The ship in which Princess Leia travels is captured by the
+                                            imperial troops commanded by the fearsome Darth Vader. After landing on the
+                                            planet Tattooine they are captured
+                                            and sold to the young Luke Skywalker, who discovers the hidden message that is
+                                            destined for Obi Wan Kenobi, the Jedi master whom Luke must find to save the
+                                            princess.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="./public/images/startwars.jpg" class="card-img" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <p class="calendar_day">7th August</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <p class="calendar_day">8th August</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-3" >
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="./public/images/vanhelsing.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Van Helsing</h5>
+                                        <p class="card-text">TA monster and strength hunter with a beautiful woman to face
+                                            Dracula and other creatures in Transylvania.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div> 
+    </section>    
+    <section id="News" class="news">
+        <div class="container-fluid">            
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -251,24 +254,24 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./public/images/news.jpg" class="img-fluid d-block w-100" alt="...">
+                        <a target="_blank" href="https://www.bostonglobe.com/magazine/?p1=BGHeader_MainNav"><img src="./public/images/news.jpg" class="img-fluid d-block w-100" alt="..."></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h5 class="mb-5">The Festival Garden is here</h5>
+                            <p>The most anticipated event of the year; will be presented this week</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./public/images/news01.jpg" class="d-block w-100" alt="...">
+                        <a target="_blank" href="https://www.boston.com/section/culture"><img src="./public/images/news01.jpg" class="d-block w-100" alt="..."></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h5 class="mb-5">The best movies came to Boston</h5>
+                            <p>The main event will be held at the Public Boston Garden where the best movies of the year will be screened</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./public/images/news02.jpg" class="d-block w-100" alt="...">
+                        <a target="_blank" href="https://www.boston25news.com/"><img src="./public/images/news02.jpg" class="d-block w-100" alt="..."></a>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h5 class="mb-5">Enjoy with your family of the last films</h5>
+                            <p>The film festival is here, under the direction of Watch it Outside. They will shows the films in the Boston Public Garden</p>
                         </div>
                     </div>
                 </div>
@@ -280,9 +283,15 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
-        </div>           
+            </div>          
+        </div>
+        <div class="news_register">
+            <h2 class="mb-3">You want to attend?</h2>
+            <p>Register for free here</p>
+            <a type="button" href="#Main">Register</a>            
+        </div>       
     </section>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container-fluid footer_credits">
             <div class="container">
