@@ -17,14 +17,22 @@
     }
     .main_text--title {
       font-size: $size-title-h1;
+      @media screen and (max-width: 400px) {
+        font-size: $size-title-h1-cell;
+      }
     }
     .main_text--subtitle {
       font-size: $size-subtitle;
+      @media screen and (max-width: 400px) {
+        font-size: $size-subtitle-cell;
+      }
     }
     .main_text--content {
       font-size: $size-textcontent;
-      .fas {
-        font-size: 2.2rem;
+      @media screen and (max-width: 400px) {
+        font-size: $size-textcontent-cell;
+      }
+      .fas {        
         color: red;
       }
     }
@@ -38,5 +46,9 @@
     font-size: $size-title-h2;
     color: $color-title-form;
     text-align: center;
+    @media screen and (max-width: 400px) {
+      font-size: $size-title-h2-cell;
+      margin-bottom: 0.5rem;
+    }
   }
 }

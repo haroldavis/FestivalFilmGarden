@@ -15,6 +15,9 @@
                 padding-top: 0;
                 padding-bottom: 0;
                 color: $color-brand;
+                @media screen and (max-width: 400px){
+                    font-size: $size-brand-cell;
+                }   
             }            
             .nav-item{
                 @media screen and (max-width: 796px){

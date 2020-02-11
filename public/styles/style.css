@@ -72,7 +72,7 @@ body {
 
 .news {
   height: 635px;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 .news .carousel-item img {
   height: 480px;
@@ -93,6 +93,11 @@ body {
 }
 .news .news_register h2 {
   font-size: 3rem;
+}
+@media screen and (max-width: 400px) {
+  .news .news_register h2 {
+    font-size: 2rem;
+  }
 }
 .news .news_register a {
   text-decoration: none;
@@ -213,14 +218,28 @@ body {
 .main .main_text .main_text--title {
   font-size: 3.5rem;
 }
+@media screen and (max-width: 796px) {
+  .main .main_text .main_text--title {
+    font-size: 2.5rem;
+  }
+}
 .main .main_text .main_text--subtitle {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 796px) {
+  .main .main_text .main_text--subtitle {
+    font-size: 1.5rem;
+  }
 }
 .main .main_text .main_text--content {
   font-size: 2rem;
 }
+@media screen and (max-width: 796px) {
+  .main .main_text .main_text--content {
+    font-size: 1.5rem;
+  }
+}
 .main .main_text .main_text--content .fas {
-  font-size: 2.2rem;
   color: red;
 }
 
@@ -233,6 +252,12 @@ body {
   font-size: 3rem;
   color: #434E4B;
   text-align: center;
+}
+@media screen and (max-width: 400px) {
+  .form .form-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* sizes */
@@ -264,6 +289,11 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   color: #385F71;
+}
+@media screen and (max-width: 400px) {
+  .header .navbar .navbar-left .navbar-brand {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (max-width: 796px) {
   .header .navbar .navbar-left .nav-item {

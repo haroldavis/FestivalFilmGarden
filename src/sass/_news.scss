@@ -22,7 +22,10 @@
     height: 152px;
     background-image: linear-gradient(#f1fec6, transparent);
     h2{
-      font-size: $size-title-h2;      
+      font-size: $size-title-h2;   
+      @media screen and (max-width: 400px) {
+        font-size: $size-title-h2-cell;
+      }   
     }
     a {
       text-decoration: none;
